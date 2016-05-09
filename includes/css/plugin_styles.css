@@ -1,0 +1,4 @@
+.twitter-message { border: 1px solid #ccc; padding: 5px; }
+.twitter-message.magenta {color: magenta;}
+.twitter-message.green {color: green;}
+.twitter-message.blue {color: blue;}
