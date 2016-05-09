@@ -8,7 +8,7 @@ function mfwp_options_page() {
 	ob_start(); ?>
 	<!-- classe wrap présente dans le core WordPress -->
 	<div class="wrap">
-		<h2>My First WordPress Plugin Options</h2>
+		<h2><?php _e('My First WordPress Plugin Options', 'my-first-wordpress-plugin'); ?></h2>
 		<!-- form qui donne accès à la table d'options -->
 		<form method="post" action="options.php">
 			<!-- Liens vers le groupe d'option déjà enregistré -->
@@ -23,11 +23,11 @@ function mfwp_options_page() {
 
 			<!-- Option d'affichage -->
 
-			<h4><?php _e('Enable', 'mfwp_domain'); ?></h4>
+			<h4><?php _e('Enable', 'my-first-wordpress-plugin'); ?></h4>
 
 			<p>
 
-				<label class="description" for="mfwp_settings[enable]"><?php _e('Display the Follow Me on Twitter Link', 'mfwp_domain'); ?></label>
+				<label class="description" for="mfwp_settings[enable]"><?php _e('Display the Follow Me on Twitter Link', 'my-first-wordpress-plugin'); ?></label>
 				<!-- utilisation de checked pour vérifier l'état d'une case à cocher ou un bouton radio -->
 				<!-- la value 1 est donnée pour avoir une valeur déclarée à comparer -->
 				<input id="mfwp_settings[enable]" name="mfwp_settings[enable]" type="checkbox" value="1" <?php checked( 1, $mfwp_options['enable'] );?> />
@@ -36,31 +36,31 @@ function mfwp_options_page() {
 
 			<!-- Lien vers le compte Twitter -->
 
-			<h4><?php _e('Twitter information', 'mfwp_domain'); ?></h4>
+			<h4><?php _e('Twitter information', 'my-first-wordpress-plugin'); ?></h4>
 
 			<p>
-				<label class="description" for="mfwp_settings[twitter_url]"><?php _e('Enter your Twitter URL', 'mfwp_domain'); ?></label>
+				<label class="description" for="mfwp_settings[twitter_url]"><?php _e('Enter your Twitter URL', 'my-first-wordpress-plugin'); ?></label>
 				<input id="mfwp_settings[twitter_url]" name="mfwp_settings[twitter_url]" type="text" value="<?php echo $mfwp_options['twitter_url']; ?>" class="regular-text ltr"></input>
 
 			</p>
 
 			<p>
 
-				<label class="description" for="mfwp_settings[twitter_name]"><?php _e('Enter your Twitter Name with @', 'mfwp_domain'); ?></label>
+				<label class="description" for="mfwp_settings[twitter_name]"><?php _e('Enter your Twitter Name with @', 'my-first-wordpress-plugin'); ?></label>
 				<input id="mfwp_settings[twitter_name]" name="mfwp_settings[twitter_name]" type="text" value="<?php echo $mfwp_options['twitter_name']; ?>"></input>
 
 			</p>
 
 			<p>
 
-				<label class="description" for="mfwp_settings[twitter_bio]"><?php _e('Enter your short twitter bio', 'mfwp_domain'); ?></label>
+				<label class="description" for="mfwp_settings[twitter_bio]"><?php _e('Enter your short twitter bio', 'my-first-wordpress-plugin'); ?></label>
 				<textarea id="mfwp_settings[twitter_bio]" class="widefat" name="mfwp_settings[twitter_bio]" rows="10" cols="3"><?php echo $mfwp_options['twitter_bio']; ?></textarea>
 
 			</p>
 
 
 			<!-- Theme  -->
-			<h4><?php _e('Theme', 'mfwp_domain'); ?></h4>
+			<h4><?php _e('Theme', 'my-first-wordpress-plugin'); ?></h4>
 			<p>
 				<?php $styles = array('blue', 'magenta', 'green'); ?>
 				<select name="mfwp_settings[theme]" id="mfwp_settings[theme]">
@@ -80,7 +80,7 @@ function mfwp_options_page() {
 
 			<!-- classe submit et button-primary présentent dans le core WordPress -->
 			<p class="submit">
-				<input type="submit" class="button-primary" value="<?php _e('Save Options', 'mfwp_domain'); ?>" />
+				<input type="submit" class="button-primary" value="<?php _e('Save Options', 'my-first-wordpress-plugin'); ?>" />
 			</p>
 
 
@@ -92,7 +92,8 @@ function mfwp_options_page() {
 
 // Déclaration de la page
 function mfwp_add_options_link() {
-	add_options_page('My First WordPress Plugin Options', 'My First Plugin', 'manage_options', 'mfwp-options', 'mfwp_options_page');
+	$name = __('My First Plugin', 'my-first-wordpress-plugin');
+	add_options_page('My First WordPress Plugin Options', $name, 'manage_options', 'mfwp-options', 'mfwp_options_page');
 }
 add_action('admin_menu', 'mfwp_add_options_link');
 

@@ -1,0 +1,90 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: My First plugin\n"
+"POT-Creation-Date: 2016-05-09 08:10+0200\n"
+"PO-Revision-Date: 2016-05-09 07:29+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: my-first-wordpress-plugin.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin-page.php:11
+msgid "My First WordPress Plugin Options"
+msgstr ""
+
+#: includes/admin-page.php:26
+msgid "Enable"
+msgstr ""
+
+#: includes/admin-page.php:30
+msgid "Display the Follow Me on Twitter Link"
+msgstr ""
+
+#: includes/admin-page.php:39
+msgid "Twitter information"
+msgstr ""
+
+#: includes/admin-page.php:42
+msgid "Enter your Twitter URL"
+msgstr ""
+
+#: includes/admin-page.php:49
+msgid "Enter your Twitter Name with @"
+msgstr ""
+
+#: includes/admin-page.php:56
+msgid "Enter your short twitter bio"
+msgstr ""
+
+#: includes/admin-page.php:63
+msgid "Theme"
+msgstr ""
+
+#: includes/admin-page.php:83
+msgid "Save Options"
+msgstr ""
+
+#: includes/admin-page.php:95
+msgid "My First Plugin"
+msgstr ""
+
+#: includes/display-functions.php:12
+msgid "Follow"
+msgstr ""
+
+#: includes/display-functions.php:12
+msgid "on Twitter:"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "My First plugin"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"http://pippinsplugins.com/how-to-begin-writing-your-first-wordpress-plugin"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "This is my first WordPress Plugin"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Pippin Williamson"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://pippinsplugins.com"
+msgstr ""

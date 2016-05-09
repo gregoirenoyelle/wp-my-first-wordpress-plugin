@@ -8,7 +8,7 @@ Author URI: http://pippinsplugins.com
 Version: 1.0
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Domain Path: /languages
+Domain Path: /languages/
 Text Domain: my-first-wordpress-plugin
 */
 
@@ -25,6 +25,16 @@ $mfwp_plugin_name = 'My First WordPress Plugin';
 // Nom donné avec la fonction mfwp_register_settings
 // Voir fichier: /my-first-wordpress-plugin/includes/admin-page.php
 $mfwp_options = get_option('mfwp_settings');
+
+/******************************
+* Add language support
+******************************/
+
+add_action( 'plugins_loaded', 'mfwp_load_textdomain' );
+function mfwp_load_textdomain() {
+  load_plugin_textdomain( 'my-first-wordpress-plugin', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
+}
+
 
 /******************************
 * includes

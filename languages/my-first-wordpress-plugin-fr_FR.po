@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: My First plugin\n"
+"POT-Creation-Date: 2016-05-09 08:10+0200\n"
+"PO-Revision-Date: 2016-05-09 08:10+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: my-first-wordpress-plugin.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin-page.php:11
+msgid "My First WordPress Plugin Options"
+msgstr "Ma première extension d’options"
+
+#: includes/admin-page.php:26
+msgid "Enable"
+msgstr "Activer"
+
+#: includes/admin-page.php:30
+msgid "Display the Follow Me on Twitter Link"
+msgstr "Afficher le Me suivre sur le lien Twitter"
+
+#: includes/admin-page.php:39
+msgid "Twitter information"
+msgstr "Information du compte Twitter"
+
+#: includes/admin-page.php:42
+msgid "Enter your Twitter URL"
+msgstr "Entre l’URL de votre compte"
+
+#: includes/admin-page.php:49
+msgid "Enter your Twitter Name with @"
+msgstr "Entrez votre nom Twitter avec le @"
+
+#: includes/admin-page.php:56
+msgid "Enter your short twitter bio"
+msgstr "Entrer votre courte bio Twitter"
+
+#: includes/admin-page.php:63
+msgid "Theme"
+msgstr "Thème"
+
+#: includes/admin-page.php:83
+msgid "Save Options"
+msgstr "Sauvegarder les options"
+
+#: includes/admin-page.php:95
+msgid "My First Plugin"
+msgstr "Ma première extension"
+
+#: includes/display-functions.php:12
+msgid "Follow"
+msgstr "Suivre"
+
+#: includes/display-functions.php:12
+msgid "on Twitter:"
+msgstr "sur Twitter: "
+
+#. Plugin Name of the plugin/theme
+msgid "My First plugin"
+msgstr "Ma première extension"
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"http://pippinsplugins.com/how-to-begin-writing-your-first-wordpress-plugin"
+msgstr ""
+"http://pippinsplugins.com/how-to-begin-writing-your-first-wordpress-plugin"
+
+#. Description of the plugin/theme
+msgid "This is my first WordPress Plugin"
+msgstr "C’est ma première extension WordPress"
+
+#. Author of the plugin/theme
+msgid "Pippin Williamson"
+msgstr "Pippin Williamson"
+
+#. Author URI of the plugin/theme
+msgid "http://pippinsplugins.com"
+msgstr "http://pippinsplugins.com"
