@@ -12,6 +12,10 @@ Domain Path: /languages/
 Text Domain: my-first-wordpress-plugin
 */
 
+//* If this file is called directly, abort.
+if ( ! defined( 'ABSPATH' ) ) {
+    die;
+}
 
 /******************************
 * global variables
