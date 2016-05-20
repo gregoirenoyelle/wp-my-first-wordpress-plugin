@@ -21,8 +21,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 * global variables
 ******************************/
 
-// Préfixe utilisé dans toute l'extension
-$mfwp_prefix = 'mfwp_';
 
 // Engistrement en Global de l'option pour éviter d'appeler à chaque fois les données dans la table options
 // Nom donné avec la fonction mfwp_register_settings
